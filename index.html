@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>My simple website</title>
+    <!--外部CSS読み込み-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--ヘッダー-->
+    <header>
+        <h1>ようこそ</h1>
+    </header>
+
+    <!--メイン内容-->
+    <main>
+        <h2>簡単な紹介</h2>
+        <p>ここにサイトの説明や自己紹介などを書いてみよう。</p>
+        <img src="https://via.paceholder.com/300" alt="サンプル画像">
+
+        <!--入力フォーム-->
+        <div class="form-container">
+            <label for="userName">お名前</label>
+            <input type="text" id="userName" placeholder="入力してみよう">
+            <button id="submitBtn">送信</button>
+        </div>
+
+        <!--入力結果表示用エリア-->
+        <p id="resultMessage"></p>
+
+        <!--カウントアップボタン-->
+        <div class="counter-countainer">
+            <p>カウント:<span id="countValue">0</span></p>
+            <button id="countBtn">カウントアップ</button>
+        </div>
+        
+    </main>
+
+    <!--フッター-->
+    <footer>
+        <p>© 2025 My Simple Website</p>
+    </footer>
+
+    <!--外部Javascript読み込み-->
+    <script src="script.js"></script>
+</body>
+</html>
