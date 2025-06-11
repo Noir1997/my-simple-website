@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!DOCTYPE html><!-- HTML5 宣言。ブラウザに「この文書は HTML5 仕様で解釈せよ」と指示。 -->
+<html lang="ja"><!-- 言語属性。日本語を使用することを宣言。 -->
 <head>
-    <meta charset="UTF-8">
-    <title>My simple website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"><!-- 文字コード属性。UTF-8 を使用することを宣言。 -->
+    <title>My simple website</title><!-- ページのタイトル。ブラウザのタブに表示される。 -->
+    <link rel="stylesheet" href="style.css"><!-- 外部 CSS ファイルをリンク。rel は関係性 style sheet。 -->
 </head>
 <body>
     <header>
@@ -40,3 +40,16 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!--1-A. 文法要点まとめ
+概念	説明
+<!DOCTYPE html>	HTML5 宣言。ブラウザに「この文書は HTML5 仕様で解釈せよ」と指示。
+<html lang="ja">	ルート要素。lang 属性で文書言語 (日本語) を示す。
+<head>	メタデータ挿入部。<meta>, <title>, CSS への <link> など。
+<meta charset="UTF-8">	文字エンコーディング。UTF-8 を指定。
+<link rel="stylesheet" …>	外部 CSS を参照。rel は関係性 style sheet。
+<header>, <main>, <footer>	HTML5 で追加されたセクショナル要素 (セマンティックタグ)。検索エンジンや支援技術に文書構造を明示。
+<h1> … <h6>	見出し。数値が小さいほど上位。
+<img src="…">	埋め込み画像。alt は代替テキスト (アクセシビリティ必須)。
+<label for="userName">	フォーム部品のラベル。for が対象 id と一致。クリックで該当入力にフォーカス。
+<input type="text">	一行テキスト入力。placeholder は未入力時のヒント。
+<script src="…">	外部 JavaScript 読み込み。</body> 直前に置けば、HTML が描画されてから JS が実行されるので DOM 取得が安全。
