@@ -1,0 +1,17 @@
+﻿# Python / venv
+venv/
+.venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+.python-version
+
+# テスト/レポート
+.pytest_cache/
+.coverage
+htmlcov/
+
+# エディタ
+.vscode/
